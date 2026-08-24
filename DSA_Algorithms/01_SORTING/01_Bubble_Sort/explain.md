@@ -25,19 +25,19 @@ Bubble Sort is a simple comparison-based sorting algorithm that repeatedly steps
 
 ### Basic Implementation
 ```python
-def bubble_sort(arr):
-    n = len(arr)
+def bubble_sort(array):
+    made_swapped = True  # Need at least one pass or check
     
-    # Outer loop for number of passes
-    for i in range(n):
-        # Inner loop for comparisons in each pass
-        for j in range(0, n-i-1):
-            # Compare adjacent elements
-            if arr[j] > arr[j+1]:
-                # Swap if they are in wrong order
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+    while made_swapped:
+        made_swapped = False  # Reset flag
+        
+        for i in range(len(array) - 1):
+            if array[i] > array[i + 1]:
+                # Swap if bigger
+                array[i], array[i + 1] = array[i + 1], array[i]
+                made_swapped = True  # Changes made, loop again
     
-    return arr
+    return array
 ```
 
 
