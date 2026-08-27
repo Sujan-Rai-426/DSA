@@ -4,6 +4,9 @@
 ## Overview
 Bubble Sort is a simple comparison-based sorting algorithm that repeatedly steps through a list, compares adjacent elements, and swaps them if they are in the wrong order. The process continues until no more swaps are needed, indicating the list is sorted.
 
+
+---
+
 ## How It Works
 
 ### Visual Explanation
@@ -20,6 +23,8 @@ Bubble Sort is a simple comparison-based sorting algorithm that repeatedly steps
 6. **Largest** element "bubbles up" to the end
 7. **Reduce** array size by 1 (last element is sorted)
 8. **Continue** until no swaps are needed
+
+---
 
 ## Python Implementation
 
@@ -40,6 +45,7 @@ def bubble_sort(array):
     return array
 ```
 
+---
 
 ># Time & Space Complexity Comparison : 
 
@@ -54,7 +60,7 @@ def bubble_sort(array):
 | **Space Complexity**  | `O(1)`        | In-place sorting, no extra space needed           |
 |                       |               |                                                   |
 
-
+---
 
 ## Pros and Cons
 ### Advantages
